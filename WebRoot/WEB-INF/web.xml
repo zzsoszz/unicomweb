@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/j2ee/dtds/webapp_2_3.dtd">
+<web-app 
+     xmlns="http://java.sun.com/xml/ns/j2ee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+     version="2.4">
+   	
+   	<!-- 
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/applicationContext-*.xml,classpath*:applicationContext-*.xml
+		</param-value>
+	</context-param>
+    <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	 -->
+	 
+    <servlet>
+        <servlet-name>initserlvet</servlet-name>
+        <servlet-class>com.bxtel.system.SystemInitServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+	
+	<!--session timeout-->
+	<session-config>
+		<session-timeout>1200</session-timeout>
+	</session-config>
+	
+	<!--welcome page-->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<distributable/>  
+</web-app>

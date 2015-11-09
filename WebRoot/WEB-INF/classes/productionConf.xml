@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE replyconf SYSTEM "productionConf.dtd">
+<replyconf>
+	<unicomconf>
+		<ipaddr>111.111.111.111</ipaddr> <!-- sg server ip  -->
+		<addrport>8888</addrport> <!-- sg server port  -->
+		
+		
+		<spNodeid>3000091444</spNodeid><!-- 3AAAAQQQQQ 3000093433 -->
+		<spListenPort>9082</spListenPort> <!-- sg server > unicomweb port  -->
+		<spBusListenPort>8807</spBusListenPort>  <!-- client > unicomweb port  -->
+		<spUserName>10655598601</spUserName>
+		<spPassword>W91444</spPassword>
+		
+		<smgUserName>openet</smgUserName>
+		<smgPassword>openet</smgPassword>
+	</unicomconf>
+	
+</replyconf>
